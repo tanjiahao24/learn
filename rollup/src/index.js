@@ -1,2 +1,2 @@
-const getName = () => "jack";
-console.log(getName());
+import _ from "lodash";
+console.log(_);
