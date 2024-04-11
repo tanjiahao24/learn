@@ -11,6 +11,9 @@ devDependencies:
   '@babel/preset-env':
     specifier: ^7.24.4
     version: 7.24.4(@babel/core@7.24.4)
+  '@rollup/plugin-babel':
+    specifier: ^6.0.4
+    version: 6.0.4(@babel/core@7.24.4)(rollup@4.14.1)
   '@rollup/plugin-commonjs':
     specifier: ^25.0.7
     version: 25.0.7(rollup@4.14.1)
@@ -1273,6 +1276,25 @@ packages:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
+    dev: true
+
+  /@rollup/plugin-babel@6.0.4(@babel/core@7.24.4)(rollup@4.14.1):
+    resolution: {integrity: sha512-YF7Y52kFdFT/xVSuVdjkV5ZdX/3YtmX0QulG+x0taQOtJdHYzVU61aSSkAgVJ7NOv6qPkIYiJSgSWWN/DM5sGw==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0
+      '@types/babel__core': ^7.1.9
+      rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
+    peerDependenciesMeta:
+      '@types/babel__core':
+        optional: true
+      rollup:
+        optional: true
+    dependencies:
+      '@babel/core': 7.24.4
+      '@babel/helper-module-imports': 7.24.3
+      '@rollup/pluginutils': 5.1.0(rollup@4.14.1)
+      rollup: 4.14.1
     dev: true
 
   /@rollup/plugin-commonjs@25.0.7(rollup@4.14.1):

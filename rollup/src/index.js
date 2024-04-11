@@ -1,1 +1,2 @@
-console.log("hello");
+const getName = () => "jack";
+console.log(getName());

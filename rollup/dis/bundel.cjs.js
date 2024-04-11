@@ -1,3 +1,6 @@
 'use strict';
 
-console.log("hello");
+var getName = function getName() {
+  return "jack";
+};
+console.log(getName());
