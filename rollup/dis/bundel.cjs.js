@@ -1,10 +1,1 @@
-var bundelName = (function (_, $) {
-	'use strict';
-
-	console.log(_.concat([1, 2, 3], 4, 5));
-	console.log($);
-	var index = "main";
-
-	return index;
-
-})(_, $);
+var bundelName=function(){"use strict";!function(e,t){void 0===t&&(t={});var n=t.insertAt;if(e&&"undefined"!=typeof document){var d=document.head||document.getElementsByTagName("head")[0],o=document.createElement("style");o.type="text/css","top"===n&&d.firstChild?d.insertBefore(o,d.firstChild):d.appendChild(o),o.styleSheet?o.styleSheet.cssText=e:o.appendChild(document.createTextNode(e))}}("body {\n  background-color: skyblue;\n}\n");return"main"}();
