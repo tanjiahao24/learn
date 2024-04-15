@@ -5,9 +5,14 @@ export default {
   input: "src/index.js",
   output: {
     file: "dis/bundel.cjs.js",
-    format: "cjs",
+    format: "iife",
     name: "bundelName",
+    // globals: {
+    //   ladash: "_",
+    //   jquery: "$",
+    // },
   },
+  external: ["lodash", "jquery"],
   plugins: [
     babel({
       exclude: /node_modules/,
